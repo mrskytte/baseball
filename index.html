@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Copenhagen Baseball</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
     <script derfer src="script.js"></script>
   </head>
   <body>
     <nav id="navbar">
       <ul id="navbar-nav">
         <li id="logo-container">
-          <img src="UAlogo_transparent.png" />
+          <a href="index.html"><img src="UAlogo_transparent.png"/></a>
         </li>
         <li class="navpoint">
           <a class="nav-link" href="youth.html">
@@ -112,11 +112,27 @@
         </li>
       </ul>
     </nav>
-    <main>
-      <div id="ungdom"></div>
-      <div id="senior"></div>
-      <div id="baseball"></div>
-      <div id="map"></div>
+    <main id="index-main">
+      <a class="grid-link" href="youth.html">
+        <div class="main-grid-elements" id="ungdom">
+          <h1 class="grid-title-text">UNGDOM</h1>
+        </div>
+      </a>
+      <a class="grid-link" href="seniors.html">
+        <div class="main-grid-elements" id="senior">
+          <h1 class="grid-title-text">SENIOR</h1>
+        </div>
+      </a>
+      <a class="grid-link" href="baseball.html">
+        <div class="main-grid-elements" id="baseball">
+          <h1 class="grid-title-text">WHAT IS BASEBALL?</h1>
+        </div>
+      </a>
+      <a class="grid-link" href="map.html">
+        <div class="main-grid-elements" id="map">
+          <h1 class="grid-title-text">WHERE TO FIND US?</h1>
+        </div>
+      </a>
     </main>
     <footer></footer>
   </body>
