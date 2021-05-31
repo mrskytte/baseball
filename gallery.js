@@ -20,11 +20,18 @@ async function getData() {
     },
   });
   const response = await data.json();
+  console.log("👩‍🌾", response);
   handleData(response);
 }
 
 function handleData(data) {
-  data[0].images.forEach(postImg);
+  if (location.search === "?youth") {
+    data[2].images.forEach(postImg);
+  }
+  if (location.search === "?senior") {
+    data[0].images.forEach(postImg);
+    data[1].images.forEach(postImg);
+  }
 }
 
 function postImg(img) {

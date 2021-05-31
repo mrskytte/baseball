@@ -12,6 +12,26 @@
         <li id="logo-container">
           <a href="index.html"><img src="UAlogo_transparent.png" /></a>
         </li>
+        <li class="navpoint"></li>
+        <li class="navpoint selected">
+          <a class="nav-link" href="seniors.html">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="baseball-ball"
+              class="svg-inline--fa fa-baseball-ball fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+            >
+              <path
+                d="M368.5 363.9l28.8-13.9c11.1 22.9 26 43.2 44.1 60.9 34-42.5 54.5-96.3 54.5-154.9 0-58.5-20.4-112.2-54.2-154.6-17.8 17.3-32.6 37.1-43.6 59.5l-28.7-14.1c12.8-26 30-49 50.8-69C375.6 34.7 315 8 248 8 181.1 8 120.5 34.6 75.9 77.7c20.7 19.9 37.9 42.9 50.7 68.8l-28.7 14.1c-11-22.3-25.7-42.1-43.5-59.4C20.4 143.7 0 197.4 0 256c0 58.6 20.4 112.3 54.4 154.7 18.2-17.7 33.2-38 44.3-61l28.8 13.9c-12.9 26.7-30.3 50.3-51.5 70.7 44.5 43.1 105.1 69.7 172 69.7 66.8 0 127.3-26.5 171.9-69.5-21.1-20.4-38.5-43.9-51.4-70.6zm-228.3-32l-30.5-9.8c14.9-46.4 12.7-93.8-.6-134l30.4-10c15 45.6 18 99.9.7 153.8zm216.3-153.4l30.4 10c-13.2 40.1-15.5 87.5-.6 134l-30.5 9.8c-17.3-54-14.3-108.3.7-153.8z"
+              ></path>
+            </svg>
+            <span class="link-text">Seniors</span>
+          </a>
+        </li>
         <li class="navpoint">
           <a class="nav-link" href="youth.html">
             <svg
@@ -32,25 +52,7 @@
             <span class="link-text">Ungdom</span>
           </a>
         </li>
-        <li class="navpoint selected">
-          <a class="nav-link" href="seniors.html">
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="baseball-ball"
-              class="svg-inline--fa fa-baseball-ball fa-w-16"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 496 512"
-            >
-              <path
-                d="M368.5 363.9l28.8-13.9c11.1 22.9 26 43.2 44.1 60.9 34-42.5 54.5-96.3 54.5-154.9 0-58.5-20.4-112.2-54.2-154.6-17.8 17.3-32.6 37.1-43.6 59.5l-28.7-14.1c12.8-26 30-49 50.8-69C375.6 34.7 315 8 248 8 181.1 8 120.5 34.6 75.9 77.7c20.7 19.9 37.9 42.9 50.7 68.8l-28.7 14.1c-11-22.3-25.7-42.1-43.5-59.4C20.4 143.7 0 197.4 0 256c0 58.6 20.4 112.3 54.4 154.7 18.2-17.7 33.2-38 44.3-61l28.8 13.9c-12.9 26.7-30.3 50.3-51.5 70.7 44.5 43.1 105.1 69.7 172 69.7 66.8 0 127.3-26.5 171.9-69.5-21.1-20.4-38.5-43.9-51.4-70.6zm-228.3-32l-30.5-9.8c14.9-46.4 12.7-93.8-.6-134l30.4-10c15 45.6 18 99.9.7 153.8zm216.3-153.4l30.4 10c-13.2 40.1-15.5 87.5-.6 134l-30.5 9.8c-17.3-54-14.3-108.3.7-153.8z"
-              ></path>
-            </svg>
-            <span class="link-text">Seniors</span>
-          </a>
-        </li>
+
         <li class="navpoint">
           <a class="nav-link" href="news.html">
             <svg
@@ -110,39 +112,40 @@
         </li>
       </ul>
     </nav>
-    <main id="summaries-main">
-      <article class="news-update">
-        <h1>THIS TITLE IS UNDER DEVELOPMENT</h1>
-        <p>
-          We are working hard to get this page up and running. Please check back
-          later
-        </p>
-      </article>
-    </main>
+    <main id="player-profile-main"></main>
     <template>
-      <article class="summaries-update">
-        <p class="summaries-date-p">
-          <span class="date-day">15</span>
-          <span class="date-month">MARCH</span>
-          <span class="date-year">2020</span>
-        </p>
-        <h1 class="summaries-title">THIS IS A TITLE FOR A summaries UPDATE</h1>
-        <p class="summaries-body">
+      <article class="player-profile">
+        <div class="image-wrapper">
+          <img
+            src="https://images.unsplash.com/photo-1547656807-9733c2b738c2?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+            alt=""
+          />
+        </div>
+        <h3 class="player-name">Name Nameson</h3>
+        <div class="player-information">
+          <p class="age top">AGE</p>
+          <p class="bats-throws top">BATS/THROWS</p>
+          <p class="positions top">POSITIONS</p>
+          <p class="player-age bot">12</p>
+          <p class="player-bats-throws bot">
+            <span class="bats">R</span>/<span class="throws">r</span>
+          </p>
+          <p class="player-positions bot">SS</p>
+        </div>
+        <p class="bio small-headline">BIO</p>
+        <p class="player-bio">
           This is the full news update Lorem ipsum dolor sit, amet consectetur
           adipisicing elit. Eveniet magni temporibus neque consequuntur
           accusantium optio similique tempora inventore, officia cumque tenetur
           unde vitae? Minima eum, amet totam aliquam perspiciatis ut, explicabo
-          provident reprehenderit nulla iure eaque, odit modi aliquid commodi?
-          Ratione vitae, sit tempore ipsa perferendis totam labore amet sequi
-          esse iste placeat nisi doloremque fugit dolorum dolorem dignissimos
-          hic aperiam eum assumenda tenetur, eligendi nostrum velit recusandae?
-          Quo, distinctio vel pariatur voluptatibus provident repudiandae minus
-          temporibus unde cum, illo saepe soluta dolorum repellendus. Quisquam
-          distinctio accusantium porro iste provident tempore temporibus quis
-          aspernatur, repellendus alias exercitationem quia tempora deleniti.
+        </p>
+        <p class="stats small-headline">STATS</p>
+        <p class="player-stats">
+          This is the full news update Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Eveniet magni temporibus neque consequuntur
         </p>
       </article>
     </template>
-    <script src="news.js"></script>
+    <script src="player-profiles.js"></script>
   </body>
 </html>

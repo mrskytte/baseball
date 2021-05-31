@@ -126,6 +126,19 @@ main {
   grid-row: span 2 / auto;
 }
 
+#news {
+  justify-content: flex-start;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  .grid-title-text {
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  &:hover {
+    transform: scale(1);
+  }
+}
+
 #t-ball {
   background-image: url("images/tball.jpg");
 }
@@ -254,8 +267,9 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 1em;
   img {
-    width: 100%;
-    margin: 1em;
+    height: 300px;
+    width: auto;
+    margin: auto;
   }
 }
 
@@ -308,5 +322,54 @@ main {
   .come-find-us {
     padding-top: 100px;
     font-size: 21px;
+  }
+}
+
+#player-profile-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  height: auto;
+}
+
+.player-profile {
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  .image-wrapper {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 75%;
+    position: relative;
+    margin-bottom: 10px;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      object-position: r;
+    }
+  }
+  .player-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 8px 0 12px;
+    .top {
+      font-size: 11px;
+      opacity: 0.8;
+    }
+    .bot {
+      font-size: 14px;
+    }
+  }
+  .small-headline {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  .player-bio {
+    line-height: 140%;
+    margin-bottom: 24px;
   }
 }
