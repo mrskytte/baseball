@@ -24,6 +24,11 @@ async function getData() {
 }
 
 function handleData(data) {
+  console.log("👩‍✈️", data);
+  data.sort(function (a, b) {
+    return new Date(a.gamedate) - new Date(b.gamedate);
+  });
+
   data.forEach(postGame);
 }
 
